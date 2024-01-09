@@ -18,30 +18,29 @@
 </head>
 <body>
 
+  <div class="container  ">
+    <div class="row  ">
+        <div class="col-lg">
+          
+<!-- social media -->
+          <div class="social ">
+            <img src="{% static 'images/facebook_3128208.png' %}" class="me-3" width="3.5%">
+          <img src="{% static 'images/instagram_1384031.png' %}"   class="me-3" width="3.5%">
+          <img src="{% static 'images/pngwing.com.png' %}"  class="me-3" width="3.5%">
+          <img src="{% static 'images/pngwing.com(1).png' %}"  width="3.5%" >
+
+      
+        
 
 
-    <div class="container  ">
-        <div class="row  ">
-            <div class="col-lg">
-              
-                <!-- social media -->
-                              <div class="social ">
-                                <img src="{% static 'images/facebook_3128208.png' %}" class="me-3" width="3.5%">
-                              <img src="{% static 'images/instagram_1384031.png' %}"   class="me-3" width="3.5%">
-                              <img src="{% static 'images/pngwing.com.png' %}"  class="me-3" width="3.5%">
-                              <img src="{% static 'images/pngwing.com(1).png' %}"  width="3.5%" >
-                
-                          
-                            
-                
-                
-                              </div>
-                            </div>
-            <div class="col-lg  col-md col-xl">
-              <a href="{%url 'appointment' %}"><button type="button" class="btn btn-success" >Make An Appointment</button></a>
-            </div>
+          </div>
         </div>
-      </div>
+        <div class="col-lg">
+          <a href="{%url 'appointment' %}"><button type="button" class="btn btn-success" >Make An Appointment</button></a>
+        </div>
+    </div>
+  </div>
+
  
         
 
@@ -142,14 +141,15 @@
 
 
 </ul>
-
-
+ <br>
+ <br>
+ <p>NOTE : *Fasting Sample is Preferred</p>
 
 
                           </div>
                           <div class="col-lg ">
                             <button class="pure-button button6">From:${{i.cost}} </button> <br>
-                            <img src="{{i.image.url}}" alt=""  class="w-100"class="Vitamin">
+                            <img src="{{i.image.url}}" alt=""  class="w-100 mt-3"class="Vitamin">
                           </div>
                           {% endfor %}
                         </div>

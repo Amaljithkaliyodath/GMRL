@@ -18,28 +18,29 @@
 </head>
 <body>
 
-    <div class="container  ">
-        <div class="row  ">
-            <div class="col-lg">
-              
+  <div class="container  ">
+    <div class="row  ">
+        <div class="col-lg">
+          
 <!-- social media -->
-<div class="social ">
-    <img src="{% static 'images/facebook_3128208.png' %}" class="me-3" width="3.5%">
-  <img src="{% static 'images/instagram_1384031.png' %}"   class="me-3" width="3.5%">
-  <img src="{% static 'images/pngwing.com.png' %}"  class="me-3" width="3.5%">
-  <img src="{% static 'images/pngwing.com(1).png' %}"  width="3.5%" >
+          <div class="social ">
+            <img src="{% static 'images/facebook_3128208.png' %}" class="me-3" width="3.5%">
+          <img src="{% static 'images/instagram_1384031.png' %}"   class="me-3" width="3.5%">
+          <img src="{% static 'images/pngwing.com.png' %}"  class="me-3" width="3.5%">
+          <img src="{% static 'images/pngwing.com(1).png' %}"  width="3.5%" >
+
+      
+        
 
 
-            
-
-
-              </div>
-            </div>
-            <div class="col-lg">
-              <a href="{%url 'appointment' %}"><button type="button" class="btn btn-success" >Make An Appointment</button></a>
-            </div>
+          </div>
         </div>
-      </div>
+        <div class="col-lg">
+          <a href="{%url 'appointment' %}"><button type="button" class="btn btn-success" >Make An Appointment</button></a>
+        </div>
+    </div>
+  </div>
+
  
         
 
@@ -123,11 +124,11 @@
 
 
 
-                      <div class="container mt-5 mb-5">
+                      <div class="container mt-5 mb-5 ">
                         <div class="row ">
                           {% for i in m %}
                         
-                          <div class="col-lg-4">
+                          <div class="col-lg-4 ms-5">
                             <div class="pack" style="width:26rem;">
                               <a href="{% url 'subblog' i.id %} ">
                                <div class="wrapper -2 ">   
