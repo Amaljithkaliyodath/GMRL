@@ -23,13 +23,13 @@
 
 
 
-
+<!-- 
   <div class="container  ">
     <div class="row  ">
-        <div class="col-lg">
+        <div class="col-lg"> -->
           
 <!-- social media -->
-          <div class="social ">
+          <!-- <div class="social ">
             <img src="{% static 'images/facebook_3128208.png' %}" class="me-3" width="3.5%">
           <img src="{% static 'images/instagram_1384031.png' %}"   class="me-3" width="3.5%">
           <img src="{% static 'images/pngwing.com.png' %}"  class="me-3" width="3.5%">
@@ -45,8 +45,8 @@
           <a href="{%url 'appointment' %}"><button type="button" class="btn btn-success" >Make An Appointment</button></a>
         </div>
     </div>
-  </div>
-v>
+  </div> -->
+
 
 <div class="container-fluid ">        
   <nav class="navbar bg-light navbar-expand-lg mt-5 py-4 px-4 fixed-top">
@@ -120,7 +120,7 @@ v>
           <div class="container mt-5 mb-5">
             <div class="row ">
               {% for i in o %}
-              <div class="col-lg-4">
+              <div class="col-lg-4  col-md-12 col-sm-12 col-12">
                 <div class="pack" >
                    <div class="wrapper -2 ">   
                      <img src="{{i.image.url}}" class=" w-100 overla mx-0 " alt="..">
@@ -156,7 +156,7 @@ v>
 
             <div class="row">
           
-              <div class="col-lg">
+              <div class="col-lg ">
                <div class="container green">
                  <div class="row ">
                   <div class="col-lg mt-3">

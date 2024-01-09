@@ -17,14 +17,14 @@
 
 </head>
 <body>
-
+<!-- 
     <div class="container  ">
         <div class="row  ">
-            <div class="col-lg">
+            <div class="col-lg"> -->
               
 <!-- social media -->
-<div class="social ">
-    <img src="{% static 'images/facebook_3128208.png' %}" class="me-3" width="3.5%">
+<!-- <div class="social "> -->
+    <!-- <img src="{% static 'images/facebook_3128208.png' %}" class="me-3" width="3.5%">
   <img src="{% static 'images/instagram_1384031.png' %}"   class="me-3" width="3.5%">
   <img src="{% static 'images/pngwing.com.png' %}"  class="me-3" width="3.5%">
   <img src="{% static 'images/pngwing.com(1).png' %}"  width="3.5%" >
@@ -39,7 +39,7 @@
               <a href="{%url 'appointment' %}"><button type="button" class="btn btn-success" >Make An Appointment</button></a>
             </div>
         </div>
-      </div>
+      </div> -->
  
         
 
@@ -107,47 +107,47 @@
   
                         <div class="container  homee">
                           <div class="row text-center ">
-                              <div class="col-lg ">
+                              <div class="col-lg col-md-12 col-sm-12 col-12 ">
                                   <h2 class="book">Book a Home Visit</h2>
                                   <p class="personalized">Experience personalized care with our expert team—schedule your appointment for <br> comprehensive health assessments and proactive well-being.</p>      
                               </div>
                               <form action="" method="POST">
                                 {% csrf_token %}
                               <div class="row appointment">
-                                  <div class="col-lg-8">
+                                  <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                                       <p class="liness">Your name</p>
                                       <input type="text" class="form-control" name="name" required>
                                   </div>
                               </div>
                               <div class="row appointment">
-                                  <div class="col-lg-4">
+                                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                                       <p class="liness">phone</p>
                                     <form action="">
                                       <input type="text" class="form-control" placeholder="" name="phone" required>
                                     </form>
                                   </div>
-                                  <div class="col-lg-4">
+                                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                                       <p class="liness">Email</p>
                                     <input type="email" class="form-control" placeholder="" name="email" required>
                           
                                   </div>
                                 </div>
                                 <div class="row appointment">
-                                  <div class="col-lg-4">
+                                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                                       <p class="liness">Date</p>
                                     <form action="">
                                       <input type="text" class="form-control" placeholder="" name="date" required>
                                     </form>
                                   </div>
-                                  <div class="col-lg-4">
+                                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                                       <p class="liness">Time</p>
-                                    <input type="email" class="form-control" placeholder="" name="time" required>
+                                    <input type="email" class="form-control" cols="60" rows="3" placeholder="" name="time" required>
                           
                                   </div>
                                 </div>
                       
                                 <div class="row appointment">
-                                  <div class="col-lg-4">
+                                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                                       <p class="liness">Gender</p>
                                       <select class="form-select" aria-label="Default select example" name="gender" required>
                                           <option value="1">Male</option>
@@ -155,7 +155,7 @@
                                           <option value="3">Other</option>
                                         </select>
                                   </div>
-                                  <div class="col-lg-4">
+                                  <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                                       <p class="liness">Age</p>
                                     <input class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number"  aria-required="true" aria-invalid="false" value="" type="number" name="number-927" class="form-control" placeholder="" name="age" required >
                           
@@ -163,19 +163,19 @@
                                 </div>
                       
                                 <div class="row appointment">
-                                  <div class="col-lg-5  mt-2">
+                                  <div class="col-lg-5 col-md-5 col-sm-5 col-5  mt-2">
                                       <p class="liness">Address</p>
                                     <textarea name="Address " id="" cols="77" rows="3" placeholder="" name="address" required></textarea>    
                                   </div>
                                 </div>
                       
                                 <div class="row  appointment">
-                                  <div class="col-lg-5   mt-2">
+                                  <div class="col-lg-5 col-md-5 col-sm-5 col-5  mt-2">
                                       <p class="liness">message</p>
                                     <textarea name="message " id="" cols="77" rows="3" placeholder=""name="message" required></textarea>    
                                   </div>
                                 </div>
-                                <div class="col-lg-8 centersub"><button class="Submit button6">Submit</button>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-8 centersub"><button class="Submit button6">Submit</button>
                                 </div>
                           </div>
                       </div>
