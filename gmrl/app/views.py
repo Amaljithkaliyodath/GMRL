@@ -89,7 +89,7 @@ def contactus(request):
         message=request.POST.get('message')
 
         if request.POST:
-            details=contactus.objects.create(name=name,email=email,phone=phone,message=message,subject=subject)
+            details=Contact.objects.create(name=name,email=email,phone=phone,message=message,subject=subject)
             details.save()
             return  redirect('contactus')
     return render(request,'contactus.html')
